@@ -5,6 +5,7 @@ import { connect as reactReduxConnect } from 'react-redux';
 
 import { connect, disconnect } from '../../base/connection';
 import { Watermarks } from '../../base/react';
+import { Feedback } from '../../feedback';
 
 /**
  * For legacy reasons, inline style for display none.
@@ -83,9 +84,9 @@ class Conference extends Component {
                     className = 'toolbar'
                     id = 'extendedToolbar'>
                     <div id = 'extendedToolbarButtons' />
-                    <a
-                        className = 'button icon-feedback'
-                        id = 'feedbackButton' />
+
+                    <Feedback />
+
                     <div id = 'sideToolbarContainer' />
                 </div>
                 <div id = 'videospace'>
